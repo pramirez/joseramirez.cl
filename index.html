@@ -1,73 +1,631 @@
-<html>
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="style.css" rel="stylesheet" type="text/css">
-<script src="js/jquery-1.7.1.js" type="text/javascript" ></script>
-<script src="js/funciones.js" type="text/javascript"></script>
-<script src="js/vitrina-fotos.js" type="text/javascript"></script>
-<title>Arriendo De Maquinaria - Jose Ramirez V. y Cia Ltda.</title>
-<div id=logo-superior>
-<img src="images/superior2.png" border="0">
-</div>
-<!--<div id=marcas>
-	<h1>
-		<img src="images/LogoBosch.jpg" width="80" height="28" border="1" class="Estilo13"/>
-		<img src="images/Makita.jpeg" width="80" height="28" border="1" class="Estilo13" />
-		<img src="images/byd.jpeg" width="80" height="28" border="1" class="Estilo13" />
-		<img src="images/Dewalt.jpeg" width="80" height="28" border="1" class="Estilo13" />
-		<img src="images/Skil.jpeg" width="80" height="28" border="1" class="Estilo13" />
-		<img src="images/vaf.jpeg" width="80" height="28" border="1" class="Estilo13" />
-		<img src="images/logoemaresa.jpg" width="80" height="28" border="1" class="Estilo13" />
-	</h1>
-</div>-->
-<div id=contenedor>
+    <title>Arriendo de Maquinaria para Construcción | Taladros, Demoledores y Más | José Ramirez Vasquez y Cia Ltda<</title>
+    <meta name="description" content="Arriendo de maquinaria para construcción. Alquila taladros, demoledores, rotomartillos y más. Calidad y confianza para tu proyecto. ¡Cotiza ahora!">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="keywords" content="arriendo maquinaria, taladros, demoledores, construcción, alquiler herramientas">
 
-<ul id=menu>
-   <li><a href="http://www.joseramirez.cl"><span>Inicio</span></a></li>
-   <li><a href="javascript:cargarContenido('nosotros.html')"><span>Nosotros</span></a></li>
-   <li><a href="javascript:cargarContenido('arriendo.html')"><span>Arriendo</span></a></li>
-   <li><a href="javascript:cargarContenido('reparacion.html')"><span>Reparacion</span></a></li>
-   <li><a href="javascript:cargarContenido('ubicacion.html')"><span>Ubicacion</span></a></li>
-   <li><a href="javascript:cargarContenido('contacto.html')"><span>Contacto</span></a></li>
-</ul>
-</div>
-<div class=linea><img src="images/header-linea.png" /></div>
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://code.jquery.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link href="stylesheet-00.css?v=1.0" rel="stylesheet" type="text/css">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Arriendo de Maquinaria para Construcción | José Ramirez Vasquez y Cia Ltda">
+    <meta property="og:description" content="Arriendo de maquinaria para construcción. Alquila taladros, demoledores, rotomartillos y más. Calidad y confianza para tu proyecto.">
+    <meta property="og:image" content="https://www.joseramirez.cl/images/logo.png">
+    <meta property="og:url" content="https://www.joseramirez.cl">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arriendo de Maquinaria para Construcción | José Ramirez Vasquez y Cia Ltda">
+    <meta name="twitter:description" content="Arriendo de maquinaria para construcción. Alquila taladros, demoledores, rotomartillos y más. Calidad y confianza para tu proyecto.">
+    <meta name="twitter:image" content="ttps://www.joseramirez.cl/images/logo.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.joseramirez.cl">
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+            defer></script>
 </head>
-<body  oncontextmenu="return false">
-<div id=resultado>
-	<div id="vitrina1">
-		<div id="hs_container" class="hs_container">
-					<div class="hs_area hs_area1">
-						<img class="hs_visible" src="images/area-pro-1/1.jpg" alt="Servicio de Arriendo de Herramientas y Maquinaria"/>
-						<img src="images/area-pro-1/2.jpg" alt="Servicio de Arriendo de Andamios y Encofrados"/>
-						<img src="images/area-pro-1/3.jpg" alt="Servicio de Arriendo de Herramientas y Maquinaria"/>
-					</div>
-					<div class="hs_area hs_area2">
-						<img class="hs_visible" src="images/area-pro-2/1.jpg" alt="Servicio de Mudanzas"/>
-						<img src="images/area-pro-2/2.jpg" alt="Servicio de Arriendo de Carpas y Toldos"/>
-						<img src="images/area-pro-2/3.jpg" alt="Servicio de Arriendo de Carpas y Toldos"/>
-					</div>
-					<div class="hs_area hs_area3">
-						<img class="hs_visible" src="images/area-pro-3/1.jpg" alt="Servicio de Arriendo de Maquinaria pesada"/>
-						<img src="images/area-pro-3/2.jpg" alt="Servicio de Arriendo de Carpas y Toldos"/>
-						<img src="images/area-pro-3/3.jpg" alt="Servicio de Arriendo de Baños Químicos"/>
-					</div>
-					<div class="hs_area hs_area4">
-						<img class="hs_visible" src="images/area-pro-4/1.jpg" alt="Servicio de Arriendo de Herramientas y Maquinaria"/>
-						<img src="images/area-pro-4/2.jpg" alt="Servicio de Arriendo de Herramientas y Maquinaria"/>
-						<img src="images/area-pro-4/3.jpg" alt="Servicio de Arriendo de Herramientas y Maquinaria"/>
-					</div>
-					<div class="hs_area hs_area5">
-						<img class="hs_visible" src="images/area-pro-5/1.jpg" alt="Servicio de Arriendo de Andamios y Encofrados"/>
-						<img src="images/area-pro-5/2.jpg" alt="Servicio de Arriendo de Herramientas y Maquinaria"/>
-						<img src="images/area-pro-5/3.jpg" alt="Servicio de Arriendo de Herramientas y Maquinaria"/>
-					</div>	  
-		</div>
-	</div>
+
+
+<body>
+<div id="whatsapp">
+    <a href="https://wa.me/56995343201" target="_blank">
+        <svg
+                height="80"
+                width="80"
+                xmlns="http://www.w3.org/2000/svg"
+        >
+            <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+            <g class="layer">
+                <title>Layer 1</title>
+                <circle
+                        cx="40"
+                        cy="40"
+                        fill="#fff"
+                        id="svg_1"
+                        r="38"
+                        stroke="#000000"
+                        stroke-width="0"
+                />
+                <path
+                        d="m57.81072,21.975c-4.48928,-4.5 -10.46786,-6.975 -16.82142,-6.975c-13.11429,0 -23.78571,10.67143 -23.78571,23.78571c0,4.18928 1.09286,8.28215 3.17143,11.89286l-3.375,12.32142l12.61072,-3.31072c3.47143,1.89642 7.38215,2.89286 11.36786,2.89286l0.01072,0c13.10358,0 24.01072,-10.67143 24.01072,-23.78571c0,-6.35357 -2.7,-12.32142 -7.18928,-16.82142l-0.00001,-0.00001l-0.00001,0l-0.00002,0.00001zm-16.82142,36.6c-3.55714,0 -7.03928,-0.95357 -10.07143,-2.75357l-0.71785,-0.42857l-7.47858,1.96072l1.99286,-7.29642l-0.47143,-0.75c-1.98215,-3.15 -3.02142,-6.78215 -3.02142,-10.52142c0,-10.89642 8.87143,-19.76786 19.77858,-19.76786c5.28215,0 10.24286,2.05714 13.97143,5.79642c3.72857,3.73928 6.02142,8.7 6.01072,13.98215c0,10.90714 -9.09642,19.77858 -19.99286,19.77858l0,-0.00002l-0.00001,0l-0.00001,-0.00001zm10.84286,-14.80714c-0.58928,-0.3 -3.51429,-1.73572 -4.06072,-1.92857c-0.54643,-0.20358 -0.94286,-0.3 -1.33928,0.3c-0.39642,0.6 -1.53214,1.92857 -1.88571,2.33572c-0.34286,0.39642 -0.69642,0.45 -1.28571,0.15c-3.49286,-1.74643 -5.78571,-3.11785 -8.08928,-7.07143c-0.61072,-1.05 0.61072,-0.975 1.74643,-3.24643c0.19286,-0.39642 0.09642,-0.73928 -0.05357,-1.03928c-0.15,-0.3 -1.33928,-3.225 -1.83214,-4.41429c-0.48215,-1.15714 -0.975,-0.99642 -1.33928,-1.01785c-0.34286,-0.02142 -0.73928,-0.02142 -1.13572,-0.02142c-0.39642,0 -1.03928,0.15 -1.58571,0.73928c-0.54643,0.6 -2.07858,2.03572 -2.07858,4.96072c0,2.925 2.13214,5.75357 2.42142,6.15c0.3,0.39642 4.18928,6.39642 10.15714,8.97858c3.77143,1.62857 5.25,1.76786 7.13572,1.48928c1.14643,-0.17143 3.51429,-1.43572 4.00714,-2.82857c0.49286,-1.39286 0.49286,-2.58215 0.34286,-2.82857c-0.13928,-0.26786 -0.53572,-0.41785 -1.125,-0.70714l-0.00001,-0.00001l0.00002,-0.00001l-0.00002,-0.00001z"
+                        fill="currentColor"
+                        id="svg_2"
+                />
+            </g>
+        </svg>
+    </a>
 </div>
+<div id="container">
+    <aside>
+        <div id="sidebar">
+            <div id="main-logo">
+                <img alt="Jose-Ramirez logo" src="images/logo.png" width="200"/>
+            </div>
+            <!--h1 id="main-title">
+                José Ramirez
+                <span id="title-skip"> Vasquez Y Cia LTDA. </span>
+            </h1-->
+            <nav>
+                <div id="navegation">
+                    <a class="nav-link" href="#main-section" id="home-link">Inicio</a>
+                    <a class="nav-link" href="#rent-head" id="rent-link">Arriendo</a>
+                    <a class="nav-link" href="#repair-head" id="repair-link"
+                    >Reparación</a
+                    >
+                    <a class="nav-link" href="#us-head" id="us-link">Nosotros</a>
+                    <a class="nav-link" href="#map-head" id="map-link">Ubicación</a>
+                    <a class="nav-link" href="#contact-head" id="form-link">Contacto</a>
+                </div>
+            </nav>
+            <div id="brand-separator">
+                <div id="brand-wrapper">
+                    <div class="brand-header" id="bosch-brand"></div>
+                    <div class="brand-header" id="makita-brand"></div>
+                    <div class="brand-header" id="blackdecker-brand"></div>
+                    <div class="brand-header" id="dewait-brand"></div>
+                    <div class="brand-header" id="skil-brand"></div>
+                    <div class="brand-header" id="emaresa-brand"></div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <article>
+        <div id="content">
+            <header>
+                <div class="section-block" id="main-section">
+                    <h2 id="main-head">Jose Ramirez V. y Cia Ltda</h2>
+                    <p id="brief-header">
+                        ¡No dejes que tu proyecto se detenga! Arrienda con nosotros y avanza sin interrupciones.
+                    </p>
+                    <a class="cta-button" href="#contact-head">¡Arrienda ahora!</a>
+                </div>
+            </header>
+
+            <section>
+                <h3 class="section-head" id="rent-head">Arriendo de Maquinaria</h3>
+                <div class="section-block" id="rent-section">
+                    <p class="brief-section">
+                        Todas las maquinarias existentes en stock, están certificadas
+                        cumpliendo las normas de calidad y seguridad que se necesitan en
+                        las diferentes obras, adicionalmente se realizan revisiones y
+                        mantenciones preventivas, para mantener los equipos en excelente
+                        estado.
+                    </p>
+
+                    <div id="image-roll">
+                        <article>
+                            <div class="tool-item">
+                                <div class="image-tool">
+                                    <img
+                                            alt="Imagen del Demoledor"
+                                            src="rentitems/demoledor15.jpg"
+                                    />
+                                </div>
+                                <div class="box-tool">
+                                    <h4>Demoledor 15 Kg</h4>
+                                    <!--span class="tool-model">11316</span-->
+                                    <div class="tool-info">
+                                        <p><b>Peso</b>: 15 Kg</p>
+                                        <p><b>Accesorios</b>: C/4 Puntos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="tool-item">
+                                <div class="image-tool">
+                                    <img
+                                            alt="Imagen del Demoledor"
+                                            src="rentitems/demoledor.jpg"
+                                    />
+                                </div>
+                                <div class="box-tool">
+                                    <h4>Demoledor 10 Kg</h4>
+                                    <!--span class="tool-model">11316</span-->
+                                    <div class="tool-info">
+                                        <p><b>Peso</b>: 10 KG</p>
+                                        <p><b>Accesorios</b>: C/4 Puntos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="tool-item">
+                                <div class="image-tool">
+                                    <img
+                                            alt="Imagen del Cincelador"
+                                            src="rentitems/cincelador.jpg"
+                                    />
+                                </div>
+                                <div class="box-tool">
+                                    <h4>Cincelador</h4>
+                                    <div class="tool-info">
+                                        <p><b>Peso</b>: 5 KG</p>
+                                        <p><b>Accesorios</b>: C/4 Puntos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="tool-item">
+                                <div class="image-tool">
+                                    <img
+                                            alt="Imagen del Rotomartillo plus"
+                                            src="rentitems/rotomartillo_sds_plus.jpg"
+                                    />
+                                </div>
+                                <div class="box-tool">
+                                    <h4>Rotomartillo SDS Plus</h4>
+                                    <div class="tool-info">
+                                        <p><b>Broca</b>: Hasta 20mm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="tool-item">
+                                <div class="image-tool">
+                                    <img
+                                            alt="Imagen del Rotomartillo max"
+                                            src="rentitems/rotomartillo_sds_max.jpg"
+                                    />
+                                </div>
+                                <div class="box-tool">
+                                    <h4>Rotomartillo SDS Max</h4>
+                                    <div class="tool-info">
+                                        <p><b>Broca</b>: Hasta 40mm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <!--div class="tool-item new-item"-->
+                            <div class="tool-item">
+                                <div class="image-tool">
+                                    <img
+                                            alt="Imagen del Vibrador de alta frecuencia"
+                                            src="rentitems/vibrador_alta_frec.jpg"
+                                    />
+                                </div>
+                                <div class="box-tool">
+                                    <h4>Vibrador Alta Frec.</h4>
+                                    <div class="tool-info">
+                                        <p><b>Accesorios</b>: Incluye Sonda</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="tool-item">
+                                <div class="image-tool">
+                                    <img
+                                            alt="Imagen del Esmeril angular"
+                                            src="rentitems/esmeril_angular.jpg"
+                                    />
+                                </div>
+                                <div class="box-tool">
+                                    <h4>Esmeril Angular</h4>
+                                    <div class="tool-info">
+                                        <p><b>Tamaños</b>: 9", 4 1/2"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="tool-item">
+                                <div class="image-tool">
+                                    <img
+                                            alt="Imagen de la Soldadora electrica"
+                                            src="rentitems/soldadora_electronica.jpg"
+                                    />
+                                </div>
+                                <div class="box-tool">
+                                    <h4>Soldadora Eléctrica</h4>
+                                    <div class="tool-info">
+                                        <p><b>Potencia</b>: 200 A.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="tool-item">
+                                <div class="image-tool">
+                                    <img
+                                            alt="Imagen de la Aspiradora"
+                                            src="rentitems/aspiradora.jpg"
+                                    />
+                                </div>
+                                <div class="box-tool">
+                                    <h4>Aspiradora semi-industrial</h4>
+                                    <div class="tool-info">
+                                        <p><b>Tipo</b>: Agua - polvo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="tool-item">
+                                <div class="image-tool">
+                                    <img
+                                            alt="Imagen del Taladro"
+                                            src="rentitems/taladro_para_fierro.jpg"
+                                    />
+                                </div>
+                                <div class="box-tool">
+                                    <h4>Taladro para fierro</h4>
+                                    <div class="tool-info">
+                                        <p><b>Capacidad de Broca</b>: Hasta 1/2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="tool-item">
+                                <div class="image-tool">
+                                    <img
+                                            alt="Imagen del Soplador"
+                                            src="rentitems/Soplador.jpg"
+                                    />
+                                </div>
+                                <div class="box-tool">
+                                    <h4>Soplador de aire frio</h4>
+                                    <div class="tool-info">
+                                        <p><i>Ninguna información adicional</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="tool-item">
+                                <div class="image-tool">
+                                    <img
+                                            alt="Imagen de la Pistola"
+                                            src="rentitems/PistolaHilti.jpg"
+                                    />
+                                </div>
+                                <div class="box-tool">
+                                    <h4>Pistola fijación</h4>
+                                    <div class="tool-info">
+                                        <p><b>Características</b>: Regulador de potencia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="tool-item">
+                                <div class="image-tool">
+                                    <img
+                                            alt="Imagen de la Lavadora"
+                                            src="rentitems/hidro.jpg"
+                                    />
+                                </div>
+                                <div class="box-tool">
+                                    <h4>Hidrolavadora</h4>
+                                    <div class="tool-info">
+                                        <p><b>Capacidad</b>: 140 BAR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="tool-item">
+                                <div class="image-tool">
+                                    <img
+                                            alt="Imagen de la Pistola"
+                                            src="rentitems/pistola_calor.jpg"
+                                    />
+                                </div>
+                                <div class="box-tool">
+                                    <h4>Pistola aire caliente</h4>
+                                    <div class="tool-info">
+                                        <p><b>Características</b>: 350º - 500º</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                    <div class="clearfix"></div>
+                    <p class="referential-text">
+                        * Las imágenes mostradas son referenciales y pueden no representar el estado actual de los
+                        equipos.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h3 class="section-head" id="repair-head">Servicio de Reparación</h3>
+                <div class="section-block" id="repair-section">
+                    <p class="brief-section">
+                        Con nuestra amplia experiencia en la reparación de equipos, también ofrecemos este servicio a
+                        nuestros clientes, utilizando siempre repuestos originales e insumos de marcas reconocidas.
+                        Garantizamos la durabilidad y el rendimiento óptimo de tus herramientas.
+                    </p>
+                    <div class="button-container">
+                        <a class="cta-button" href="#contact-head">¡Solicita una cotización!</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="section-head" id="us-head">Nosotros</h3>
+                <div class="section-block" id="us-section">
+                    <p class="brief-section">
+                        En el año 1993 nace como empresa Jose Ramirez Vasquez y Cia.
+                        Ltda. , Arriendo de Maquinaria para la Construcción, no
+                        obstante, don Jose Ramirez comenzó en el rubro 15 años antes,
+                        pasando de empleado a socio y de socio a dueño de su propia
+                        empresa de arriendo de maquinaria. La experiencia adquirida en
+                        todos estos años hace que esta empresa esté verdaderamente
+                        comprometida con la atención dedicada y personalizada con cada
+                        uno de nuestros clientes. Nuestras maquinas cuentan con una
+                        mantención preventiva, es decir, cada vez que recibimos una
+                        maquina que haya trabajado el tiempo que sea, esta se revisa, se
+                        limpia y se prueba antes de ser arrendada nuevamente, esto nos
+                        permite disminuir considerablemente las fallas en terreno.
+                        Además contamos con el servicio en obra, este servicio opera
+                        cada vez que alguna maquina necesite mantención por mucho uso o
+                        cambio de accesorios, nos acercamos a la obra sin costo para el
+                        cliente.
+                    </p>
+
+                    <article>
+                        <div class="sub-section" id="mision-sub">
+                            <h3 class="sub-head">Misión</h3>
+                            <p>
+                                Prestar un servicio de calidad, con una gama de equipos con
+                                tecnología de punta, preocupándonos de cumplir con las
+                                expectativas de nuestros clientes, entregándoles un servicio
+                                oportuno tanto en nuestras oficinas como en terreno, que
+                                asegure calidad y continuidad en la labor que cumplen
+                                nuestras maquinas.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="sub-section" id="vision-sub">
+                            <h3 class="sub-head">Vision</h3>
+                            <p>
+                                Ser una empresa reconocida como líder en el rubro del
+                                arriendo de maquinarias para la construcción. Destacando por
+                                la buena atención al cliente y por la excelencia en los
+                                equipos que tenemos a disposición.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="section-head" id="contact-head">Contáctanos</h3>
+                <div class="section-block" id="contact-section">
+                    <p>Para consultas, no dudes en escribirnos a:</p>
+
+                    <div class="contact-item">
+                        <p><strong>Email:</strong> <a href="mailto:contacto@joseramirez.cl" target="_blank">contacto@joseramirez.cl</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-item">
+                        <p><strong>WhatsApp:</strong> <a href="https://wa.me/56995343201" target="_blank">+56 9 9534
+                            3201</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <a href="https://wa.me/56995343201">
+                            <img src="images/WhatsAppButtonGreenSmall.png" alt="Chat on WhatsApp">
+                        </a>
+                    </div>
+
+                    <div class="qr-section">
+                        <p>Escanea el código para guardar nuestra información de contacto:</p>
+                        <img alt="Código QR de contacto" class="qr-image" src="images/frame.png"/>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="section-head" id="map-head">Nos encontramos en ...</h3>
+                <div class="section-block" id="map-section">
+                    <iframe
+                            frameborder="0"
+                            height="400"
+                            marginheight="0"
+                            marginwidth="0"
+                            scrolling="no"
+                            src="https://maps.google.cl/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=general+gana+615&amp;aq=&amp;sll=-33.470218,-70.63973&amp;sspn=0.006408,0.011362&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=General+Gana+615,+Santiago,+Regi%C3%B3n+Metropolitana&amp;ll=-33.470184,-70.639687&amp;spn=0.025059,0.077248&amp;z=14&amp;iwloc=A&amp;output=embed"
+                            width="900"
+                    ></iframe>
+                    <a
+                            href="https://maps.google.cl/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=general+gana+615&amp;aq=&amp;sll=-33.470218,-70.63973&amp;sspn=0.006408,0.011362&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=General+Gana+615,+Santiago,+Regi%C3%B3n+Metropolitana&amp;ll=-33.470184,-70.639687&amp;spn=0.025059,0.077248&amp;z=14&amp;iwloc=A"
+                            id="show-map"
+                    >
+                        Ver mapa más grande
+                    </a>
+                </div>
+            </section>
+            <footer>
+                <div id="footer">
+                    <div id="left-footer">Jose Ramirez V. y Cia Ltda. 2024</div>
+                    <div class="clearfix"></div>
+                </div>
+            </footer>
+        </div>
+    </article>
+</div>
+
+<script type="text/javascript">
+    // ClassName ie8 fix
+    if (!document.getElementsByClassName) {
+        document.getElementsByClassName = function (className) {
+            return this.querySelectorAll("." + className);
+        };
+        Element.prototype.getElementsByClassName =
+            document.getElementsByClassName;
+    }
+
+    function changeSize(elem, useWidth, length) {
+        if (useWidth === true) {
+            elem.parentNode.children[1].style.width = length;
+        } else {
+            elem.parentNode.children[1].style.height = length;
+        }
+    }
+
+    function deleteAttr(elem) {
+        elem.parentNode.children[1].removeAttribute("style");
+    }
+
+    // Animación de barras amarillas en los enlaces del Sidebar
+
+    var links = document.getElementsByClassName("nav-link"),
+        e = 0;
+
+    for (var i = 0; i < links.length; i++) {
+        (function (i) {
+            links[i].onmouseover = function () {
+                if (window.innerWidth > 750) {
+                    var that = this;
+                    timer = setInterval(function () {
+                        e++;
+                        if (e === 34) {
+                            e = 0;
+                        }
+                        that.style.backgroundPosition = e + "px 0";
+                    }, 30);
+                }
+            };
+            links[i].onmouseout = function () {
+                if (window.innerWidth > 750) {
+                    clearInterval(timer);
+                    e = 0;
+                    this.style.backgroundPosition = "inherit";
+                }
+            };
+        })(i);
+    }
+
+    // Transiciones suaves para cada enlace del sidebar
+
+    jQuery("a").click(function (e) {
+        // Verifica si el enlace es el de WhatsApp
+        if (!this.href.includes("wa.me")) {
+            if (!this.href.includes("mailto")) {
+                e.preventDefault(); // Solo prevenir el comportamiento por defecto si no es WhatsApp
+                var headerGap = 0;
+                if (window.innerWidth < 870) {
+                    headerGap = document.getElementById("sidebar").offsetHeight;
+                }
+                var target = this.hash;
+                if (this.href != "#") {
+                    jQuery("html, body").animate(
+                        {
+                            scrollTop: jQuery(target).offset().top - headerGap,
+                        },
+                        500
+                    );
+                }
+            }
+        }
+    });
+
+
+    // Cambiar posición en el DOM de #brand-separator para la vista de móviles
+
+    var appended = true;
+
+    function goBrand() {
+        jQuery("#brand-separator").detach().insertBefore("#main-section");
+    }
+
+    function returnBrand() {
+        jQuery("#brand-separator").detach().appendTo("#sidebar");
+    }
+
+    if (window.innerWidth <= 870) {
+        goBrand();
+    }
+    $(window).resize(function () {
+        if (window.innerWidth <= 870) {
+            if (appended === true) {
+                goBrand();
+                appended = false;
+            }
+        } else {
+            returnBrand();
+            appended = true;
+        }
+    });
+
+    // Buscar todos los .new-item y insertarles un elemento con la etiqueta "Nuevo"
+
+    var newItems = document.getElementsByClassName("new-item");
+    if (newItems !== 0) {
+        for (var i = 0; i < newItems.length; i++) {
+            function insertAfter(referenceNode, newNode) {
+                referenceNode.parentNode.insertBefore(
+                    newNode,
+                    referenceNode.nextSibling
+                );
+            }
+
+            var newDiv = document.createElement("div"),
+                setDiv = newItems[i].lastChild;
+            newDiv.className = "new-ad";
+            newDiv.innerHTML = "Nuevo";
+            insertAfter(setDiv, newDiv);
+        }
+    }
+</script>
 </body>
-<footer>
-<div class=pieFoto><img src="images/footer.png" /></div>
-<div class=pie>©2012 Jose Ramirez V. y Cia Ltda</div>
-</footer>
 </html>
